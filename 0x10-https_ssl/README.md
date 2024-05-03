@@ -73,15 +73,15 @@ Your servers
 
 Actions Toggle Dropdown
 
- |
+|
 | 1733-web-02 | `ubuntu` | `3.83.35.54` | running |
 
 Actions Toggle Dropdown
 
- |
+|
 | 1733-lb-01 | `ubuntu` | `34.231.109.143` | running |
 
 Actions Toggle Dropdown
 
- |
+|
 
