@@ -17,3 +17,16 @@ elif [ "$#" == 2 ]
 then
   domain_information "$1" "$2"
 fi
+
+# Checks subdomain and DNS records
+
+sdms=$2
+if [ "$#" -eq 1 ]
+then
+    sdms="www lb-01 web-01 web-02"
+fi
+for sdm in $sdms
+do
+    output=$(dig "$sdm.$1" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{ print "is a " $4 " record and points to " $5}')
+    echo "The subdomain $sdm $output"
+done
