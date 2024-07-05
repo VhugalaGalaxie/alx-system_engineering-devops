@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script prints "Best school" 10 times
+# This script is displaying "Holberton School" 10 times
 
-for _ in {1..10}
-do
-    echo "Best School"
+for i in {0..9}; do
+	echo "$i" >> /tmp/tmp.txt
+	echo "Holberton School"
 done
